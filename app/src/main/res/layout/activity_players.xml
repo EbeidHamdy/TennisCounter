@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tenniscounter.PlayersActivity">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentTop="true"
+    android:scaleType="centerCrop"
+    android:src="@drawable/playersdata" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomText"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="START"
+        android:onClick="Start"/>
+<EditText
+    android:id="@+id/player_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FF9800"
+    android:hint="Player 1"
+    android:textStyle="bold"
+    android:textSize="10pt"
+    android:layout_marginLeft="120dp"
+    android:layout_marginTop="30dp"/>
+<EditText
+    android:id="@+id/player_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FF9800"
+    android:hint="Player 3"
+    android:textStyle="bold"
+    android:textSize="10pt"
+    android:visibility="invisible"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="90dp"
+    android:layout_marginTop="120dp"/>
+<EditText
+    android:id="@+id/player_4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FF9800"
+    android:visibility="invisible"
+    android:hint="Player 4"
+    android:textStyle="bold"
+    android:textSize="10pt"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="120dp"
+    android:layout_marginBottom="120dp"/>
+<EditText
+    android:id="@+id/player_2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#FF9800"
+    android:hint="Player 2"
+    android:textStyle="bold"
+    android:textSize="10pt"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_marginRight="90dp"
+    android:layout_marginBottom="30dp"/>
+</RelativeLayout>

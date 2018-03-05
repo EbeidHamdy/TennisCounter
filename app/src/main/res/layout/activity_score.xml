@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.tenniscounter.ScoreActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/score2"
+        android:scaleType="fitXY"/>
+        <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CustomText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:layout_margin="16dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/Team_A"
+            style="@style/CustomText"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            tools:text="Ebeid Hamdy" />
+
+
+        <TextView
+            android:id="@+id/Team_B"
+            style="@style/CustomText"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/Team_A"
+            tools:text="Mohamed Alaa" />
+
+        <TextView
+            android:id="@+id/Game_Points_Team_A"
+            style="@style/CustomText"
+            android:layout_toRightOf="@id/Team_A"
+            tools:text="40" />
+
+        <TextView
+            android:id="@+id/Game_Points_Team_B"
+            style="@style/CustomText"
+            android:layout_below="@id/Game_Points_Team_A"
+            android:layout_toRightOf="@id/Team_B"
+            tools:text="15" />
+
+        <TextView
+            android:id="@+id/Set_1_Team_A"
+            style="@style/CustomText"
+            android:layout_toRightOf="@id/Game_Points_Team_A"
+            tools:text="5" />
+
+        <TextView
+            android:id="@+id/Set_1_Team_B"
+            style="@style/CustomText"
+            android:layout_below="@+id/Game_Points_Team_A"
+            android:layout_toRightOf="@id/Game_Points_Team_B"
+            tools:text="3" />
+
+        <TextView
+            android:id="@+id/Set_2_Team_A"
+            style="@style/CustomText"
+            android:layout_toRightOf="@id/Set_1_Team_A"
+            tools:text="4" />
+
+        <TextView
+            android:id="@+id/Set_2_Team_B"
+            style="@style/CustomText"
+            android:layout_below="@+id/Set_1_Team_A"
+            android:layout_toRightOf="@id/Set_1_Team_B"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/Set_3_Team_A"
+            style="@style/CustomText"
+            android:layout_toRightOf="@id/Set_2_Team_A"
+            tools:text="8" />
+
+        <TextView
+            android:id="@+id/Set_3_Team_B"
+            style="@style/CustomText"
+            android:layout_below="@+id/Set_2_Team_A"
+            android:layout_toRightOf="@id/Set_2_Team_B"
+            tools:text="7" />
+
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Team_A15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/Team_A30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:layout_margin="16dp"
+                android:text="30" />
+
+            <Button
+                android:id="@+id/Team_A40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="40" />
+
+            <Button
+                android:id="@+id/Team_AAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:layout_margin="16dp"
+                android:text="AD" />
+
+            <Button
+                android:id="@+id/Team_A1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Team_B15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="15" />
+
+            <Button
+                android:id="@+id/Team_B30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:layout_margin="16dp"
+                android:text="30" />
+
+            <Button
+                android:id="@+id/Team_B40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="40" />
+
+            <Button
+                android:id="@+id/Team_BAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:layout_margin="16dp"
+                android:text="AD" />
+
+            <Button
+                android:id="@+id/Team_B1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/CustomText"
+                android:text="1" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
+
+
+</RelativeLayout>
